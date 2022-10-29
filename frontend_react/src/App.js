@@ -1,15 +1,8 @@
 import React from "react";
 
-import { AppWrap, MotionWrap } from "./wrapper";
-import {
-  About,
-  FixedComponents,
-  Footer,
-  Header,
-  Skills,
-  Work,
-} from "./container";
-import { Navbar, SideBar } from "./components";
+import { FixedWrap } from "./wrapper";
+import { About, Footer, Header, Skills, Work } from "./container";
+import { Navbar } from "./components";
 import "./app.scss";
 
 const App = () => {
@@ -25,4 +18,4 @@ const App = () => {
   );
 };
 
-export default AppWrap(App, "app__app");
+export default FixedWrap(App, "app");
